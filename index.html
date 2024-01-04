@@ -1,146 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Homepage showcasing the main projects developed"
-    />
-    <title>Carolina Freitas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="libs/bootstrap-5.3.2-dist/css/bootstrap.min.css"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Homepage showcasing the main projects developed"
+		/>
+		<title>Carolina Freitas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="libs/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+		/>
 
-    <script src="libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-      <div class="container navbar-container">
-        <a class="navbar-brand" href="index.html">Carolina Freitas</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<script src="libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container navbar-container">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/carolina-avatar-no-bg.png" class="avatar" alt="Mini Avatar Carolina" width="30px" height="30px">
+					Carolina Freitas</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="portfolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html"
+								>Contact me</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="header-content">
-          <img
-            src="assets/img/carolina-avatar-no-bg.png"
-            alt="Avatar Carolina"
-            class="avatar"
-          />
-          <hr />
-          <h1 class="text-center title-1">👋 Hi, I'm</h1>
-          <h2 class="text-center title-2">Carolina Freitas</h2>
-          <h3 class="text-center title-3">
-            🇵🇹 Front-end developer, based in Portugal
-          </h3>
-          <div class="navigation-links mb-5">
-            <a href="about.html" class="primary-link">About me</a>
-            <a href="portfolio.html" class="primary-link">Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="recent-work-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3 class="section-title">What I've done recently</h3>
-          </div>
-        </div>
-        <div class="row mb-5 portfolio-project">
-          <div class="col-md-6">
-            <img
-              src="assets/img/weather-app.png"
-              alt="Image of a weather application"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-3 project-title">Weather app</h2>
-            <p class="project-description">
-              Weather app built with HTML, CSS, and JavaScript, using
-              OpenWeatherAPI and Axios. It delivers real-time weather updates
-              with a user-friendly interface. Stay informed with current
-              conditions, daily, and weekly forecasts, all wrapped in a visually
-              engaging design.
-            </p>
-            <div class="mt-5">
-              <a
-                href="https://weather-app-fcff.netlify.app/"
-                class="primary-link"
-                >Launch Weather App</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <div class="mt-5 d-flex justify-content-center">
-              <a href="portfolio.html" class="secondary-link"
-                >Curious? Check my portfolio</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-				<!-- <section class="contact-section">
-					<div class="container">
-							<div class="row">
-									<div class="col-12">
-											<h3 class="section-title">Work with me</h3>
-									</div>
-							</div>
-						
-							
+		<header class="masthead">
+			<div class="container h-100">
+				<div class="header-content">
+					<img
+						src="assets/img/carolina-avatar-no-bg.png"
+						alt="Avatar Carolina"
+						class="avatar"
+					/>
+					<hr />
+					<h1 class="text-center title-1 mb-md-0 mb-1">👋 Hi, I'm</h1>
+					<h2 class="text-center title-2 mb-md-0 mb-1">Carolina Freitas</h2>
+					<h3 class="text-center title-3">
+						🇵🇹 Front-end developer, based in Portugal
+					</h3>
+					<div class="navigation-links mb-5 mt-md-5 mt-4 flex-md-row flex-column">
+						<a href="about.html" class="primary-link m-md-4 m-3 mb-md-4 mb-1">About me</a>
+						<a href="portfolio.html" class="primary-link m-md-4 m-3"
+							>Portfolio</a
+						>
 					</div>
-			</section> -->
-  </body>
+				</div>
+			</div>
+		</header>
+
+		<section class="recent-work-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="section-title">👩‍💻 What I've Done Recently</h3>
+					</div>
+				</div>
+				<div class="row mb-5 portfolio-project">
+					<div class="col-md-6 mb-5 mb-md-0">
+						<img
+							src="assets/img/weather-app.png"
+							alt="Image of a weather application"
+							class="img-fluid rounded shadow"
+						/>
+					</div>
+					<div class="col-md-6">
+						<h2 class="mb-3 project-title">Weather app</h2>
+						<p class="project-description">
+							Weather app built with HTML, CSS, and JavaScript,
+							using OpenWeatherAPI and Axios. It delivers
+							real-time weather updates with a user-friendly
+							interface. Stay informed with current conditions,
+							daily, and weekly forecasts, all wrapped in a
+							visually engaging design.
+						</p>
+						<div class="mt-5">
+							<a
+								href="https://weather-app-fcff.netlify.app/"
+								class="primary-link"
+								>Launch Weather App</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="mt-5 d-flex justify-content-center">
+							<a href="portfolio.html" class="secondary-link"
+								>👉 Check More Projects</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="section-title">📮 Let's Get in Touch</h3>
+						<p>Ready to start your next project with me?</p>
+					</div>
+
+					<div
+						class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center"
+					>
+						<a
+							href="mailto:fati_carol@hotmail.com"
+							class="secondary-link"
+						>
+							💬 Talk to Me
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 d-flex align-items-center order-md-1 order-2 justify-content-md-start justify-content-center mb-md-0 mb-1">Copyright © Carolina Freitas 2024</div>
+					<div class="col-md-4 social-media-icons order-md-2 order-1 mb-md-0 mb-3">
+						<a href="https://www.linkedin.com/in/carolinafreitas94/" target="_blank">
+							<img src="assets/img/linkedin.png" alt="Ícone do Linkedin">
+						</a>
+						<a href="https://github.com/fcff94" target="_blank">
+							<img src="assets/img/github.png" alt="Ícone do Github">
+						</a>
+					</div>
+					<div class="col-md-4 d-flex align-items-center order-3 justify-content-md-start justify-content-center">📍 Lisbon, Portugal</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
