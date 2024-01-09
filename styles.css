@@ -182,12 +182,33 @@ p {
 
 /* ----------------------------------------------- */
 
+/* SECTION - CONTACT ME - PAGE */
+.contact-me-section .title-2 {
+	margin-bottom: 50px;
+
+}
+
+.contact-detail .contact-title {
+	color: var(--darkgray);
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.contact-detail a {
+	text-decoration: none;
+	font-size: 16px;
+	color: var(--turquoise);
+	font-weight: 500;
+}
+
+/* ----------------------------------------------- */
+
 /* SECTION - CONTACT */
 .contact-section {
 	padding: 30px 0;
 	background-color: var(--turquoise);
 	font-size: 16px !important;
-	position: static;
 }
 
 .contact-section p {
@@ -208,7 +229,6 @@ p {
 	color: var(--white);
 	padding: 20px 0;
 	font-size: 13px;
-	position: static;
 }
 
 .footer-section a {
@@ -336,22 +356,5 @@ p {
 	.recent-work-section .section-title {
 		font-size: 38px;
 		text-align: left;
-	}
-}
-
-@media only screen and (min-width: 993px) {
-	.contact-section,
-	.footer-section {
-		position: fixed;
-		left: 0;
-		right: 0;
-	}
-
-	.contact-section {
-		bottom: 72px;
-	}
-
-	.footer-section {
-		bottom: 0;
 	}
 }
