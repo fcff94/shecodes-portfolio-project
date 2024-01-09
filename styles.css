@@ -272,7 +272,7 @@ p {
 
 .section-subpages {
 	background-color: var(--white);
-	margin-top: 170px;
+	margin-top: 100px;
 	margin-bottom: 80px;
 }
 /* ----------------------------------------------- */
@@ -316,17 +316,6 @@ p {
 }
 /* ----------------------------------------------- */
 
-.email-link {
-	display: flex;
-	justify-content: center;
-	color: var(--primary-color);
-	font-size: 28px;
-	text-decoration: none;
-}
-
-.email-link:hover {
-	text-decoration: underline;
-}
 
 /* MEDIA QUERIES  */
 @media only screen and (max-width: 992px) {
