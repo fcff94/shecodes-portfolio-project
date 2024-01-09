@@ -170,6 +170,14 @@ p {
 	padding: 30px 0;
 	background-color: var(--turquoise);
 	font-size: 16px !important;
+	position: sticky;
+	bottom: 72px;
+	left: 0;
+	right: 0;
+}
+
+.footer-section a {
+	color: var(--pink);
 }
 
 .contact-section p {
@@ -195,6 +203,10 @@ p {
 	color: var(--white);
 	padding: 20px 0;
 	font-size: 13px;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .social-media-icons {
