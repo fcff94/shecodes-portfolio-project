@@ -1,33 +1,108 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	--darkgray: #272727;
+	--lightgreen: #e3f6f5;
+	--darkgreen: #bae8e8;
+	--turquoise: #66bfbf;
+	--pink: #f76b8a;
+	--txt-grey: #5c5959;
+	--txt-shadow: #c3c3c3;
+	--white: #fff;
+	--box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  margin-top: 300px;
+h1,
+h2,
+h3,
+h3,
+h5,
+h6,
+p,
+div,
+span {
+	font-family: "Montserrat", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  margin: 0;
+	margin: 0;
 }
 
-h1 {
-  font-size: 96px;
+p {
+	font-size: 18px;
+	line-height: 1.5;
 }
 
-.heading1-size {
-  font-size: 96px;
+/* NAVBAR */
+.navbar.bg-dark {
+	background-color: var(--darkgray) !important;
+	color: var(--darkgreen);
 }
 
-.first-heading1 {
-  font-size: 48px;
+.navbar-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: "Audiowide", sans-serif;
+	color: var(--white);
+	font-size: 24px;
 }
 
-h2 {
-  font-size: 48px;
+.navbar-brand:hover {
+	color: var(--turquoise) !important;
+}
+
+.nav-link {
+	font-family: "Montserrat", sans-serif;
+	color: var(--white);
+	font-weight: 500;
+	padding: 8px 16px !important;
+}
+
+.nav-link:hover {
+	text-decoration: overline !important;
+	color: var(--turquoise) !important;
+}
+
+.nav-link.active {
+	text-decoration: overline !important;
+	color: var(--pink) !important;
+}
+/* --------------------------------------------------------- */
+/* HEADER */
+.masthead {
+	height: 100vh;
+	background-color: var(--lightgreen);
+	background-size: cover;
+	min-height: 40rem;
+	padding-top: 4.5rem;
+	padding-bottom: 0;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+}
+
+.header-content hr {
+	border: 1px solid var(--turquoise) !important;
+	width: 50%;
+	margin: 20px 0;
+}
+
+.avatar {
+	background: var(--turquoise);
+	border-radius: 50%;
+	max-width: 65%;
+	height: auto;
+}
+
+.title-1 {
+	font-size: 48px;
+	opacity: 0.9;
 }
 
 .title-2 {
@@ -122,10 +197,6 @@ h2 {
 	font-size: 13px;
 }
 
-.footer-section a {
-	color: var(--pink);
-}
-
 .social-media-icons {
 	display: flex;
 	align-items: center;
@@ -137,57 +208,73 @@ h2 {
 	margin: 0 15px;
 }
 
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
+.social-media-icons img:hover {
+	opacity: 1;
 }
+/* ----------------------------------------------- */
 
-.navigation-links a {
-  margin: 20px;
+/* GENERAL STYLES */
+.section-title {
+	font-family: "Audiowide", sans-serif;
+	text-shadow: 2px 3px 5px var(--txt-shadow);
+}
+/* ----------------------------------------------- */
+
+/* BUTTONS AND LINKS */
+.navigation-links {
+	display: flex;
+	justify-content: center;
 }
 
 .primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+	border-radius: 4px;
+	padding: 20px 25px;
+	text-decoration: none;
+	font-weight: 500;
+	background: var(--turquoise);
+	box-shadow: var(--box-shadow);
+	color: var(--white);
+	font-size: 18px;
+	text-align: center;
+}
+
+.primary-link:hover {
+	opacity: 0.9;
 }
 
 .secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+	border-radius: 4px;
+	padding: 20px 25px;
+	text-decoration: none;
+	font-weight: 500;
+	background: var(--pink);
+	box-shadow: var(--box-shadow);
+	color: var(--white);
+	font-size: 18px;
+	text-align: center;
 }
 
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
+.secondary-link:hover {
+	opacity: 0.9;
 }
+/* ----------------------------------------------- */
 
 .about-paragraphs {
-  margin: 30px 0;
+	margin: 30px 0;
 }
 
 .about-paragraphs p {
-  margin: 10px;
+	margin: 10px;
 }
 
 .email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
+	display: flex;
+	justify-content: center;
+	color: var(--primary-color);
+	font-size: 28px;
+	text-decoration: none;
 }
 
 .email-link:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
