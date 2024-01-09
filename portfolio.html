@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="About Carolina Freitas page"
+		/>
+		<title>Portfolio - Carolina Freitas</title>
+		<!-- Favicon  -->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Fonts  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap  -->
+		<link
+			rel="stylesheet"
+			href="libs/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+		/>
+		<script src="libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="libs/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- My styles  -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container navbar-container">
+				<a class="navbar-brand" href="index.html">
+					<img src="assets/img/carolina-avatar-no-bg.png" class="avatar-bg avatar-width" alt="Mini Avatar Carolina" width="30px" height="30px">
+					Carolina Freitas</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								title="Homepage"
+								href="index.html"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" title="About page" href="about.html">About me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" title="Portfolio page" href="portfolio.html"
+								>Portfolio</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" title="Contact page" href="contact.html"
+								>Contacts</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="portfolio-section section-subpages">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-12">
+						<h3 class="title-2 text-center">👩‍💻 Portfolio</h3>
+					</div>
+				</div>
+
+				<div class="row portfolio-project">
+					<div class="col-lg-6 mb-5 mb-lg-0 text-lg-start text-center">
+						<img
+							src="assets/img/weather-app.png"
+							alt="Image of a weather application"
+							class="img-fluid rounded shadow"
+						/>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="mb-3 project-title">Weather app</h2>
+						<p class="txt-description">
+							Weather app built with HTML, CSS, and JavaScript,
+							using OpenWeatherAPI and Axios. It delivers
+							real-time weather updates with a user-friendly
+							interface. Stay informed with current conditions,
+							daily, and weekly forecasts, all wrapped in a
+							visually engaging design.
+						</p>
+						<div class="mt-5">
+							<a
+								href="https://weather-app-fcff.netlify.app/"
+								title="Launch weather app"
+								class="primary-link"
+                                target="_blank"
+								>🚀 Launch Weather App</a
+							>
+						</div>
+					</div>
+				</div>
+
+                <div class="row portfolio-project"> 
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <h2 class="mb-3 project-title">Koo App Replica</h2>
+                        <p class="txt-description">
+                           Small replica of Koo social media app, made during a React Fundamentals course.
+                           Built using React, Vite, TypeScript, StyledComponentes, Context API and Axios.
+                        </p>
+                        <div class="mt-5">
+                            <a
+                                href="https://github.com/fcff94/koo-app"
+                                title="See Koo app Project"
+                                class="primary-link"
+                                target="_blank"
+                                >👉 See Koo Project</a
+                            >
+                        </div>
+                    </div>
+					<div class="col-lg-6 mb-5 mb-lg-0 order-lg-2 order-1 text-lg-end text-center">
+						<img
+							src="assets/img/koo-app.png"
+							alt="Image of Koo app replica project"
+							class="img-fluid rounded shadow"
+						/>
+					</div>
+				</div>
+				
+                <div class="row portfolio-project">
+					<div class="col-lg-6 mb-5 mb-lg-0 text-lg-start text-center">
+						<img
+							src="assets/img/miguelcasimiro-site.png"
+							alt="Image of a weather application"
+							class="img-fluid rounded shadow"
+						/>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="mb-3 project-title">Real Estate Agent Personal Page</h2>
+						<p class="txt-description">
+                            Static website for a Remax real estate agente who wanted to promote his work and contacts.
+							Website built using a Bootstrap template, HTML and CSS.
+						</p>
+						<div class="mt-5">
+							<a
+								href="https://miguelcasimiro.netlify.app/"
+								title="Launch Real Estate Page"
+								class="primary-link"
+                                target="_blank"
+								>🚀 Launch Real Estate Agent Page</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="section-title">📮 Let's Get in Touch</h3>
+						<p>Ready to start your next project with me?</p>
+					</div>
+
+					<div
+						class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center"
+					>
+						<a
+							href="mailto:fati_carol@hotmail.com"
+							title="Talk to me"
+							class="secondary-link"
+						>
+							💬 Talk to Me
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 d-flex align-items-center order-lg-1 order-2 justify-content-lg-start justify-content-center mb-lg-0 mb-1">
+						<a href="https://github.com/fcff94" target="_blank" title="Github" class="text-decoration-none txt-white">
+							Open-source 
+						</a>
+					&nbsp;code by Carolina Freitas © 2024
+					</div>
+					<div class="col-lg-4 social-media-icons order-lg-2 order-1 mb-lg-0 mb-3">
+						<a href="https://www.linkedin.com/in/carolinafreitas94/" target="_blank" title="Linkedin">
+							<img src="assets/img/linkedin.png" alt="Ícone do Linkedin">
+						</a>
+						<a href="https://github.com/fcff94" target="_blank" title="Github">
+							<img src="assets/img/github.png" alt="Ícone do Github">
+						</a>
+					</div>
+					<div class="col-lg-4 d-flex align-items-center order-3 justify-content-center">📍 Lisbon, Portugal</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

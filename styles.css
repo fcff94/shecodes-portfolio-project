@@ -140,25 +140,44 @@ p {
 
 /* ----------------------------------------------- */
 
-/* SECTION - CONTACT */
-.about-section {
-	background-color: var(--white);
-	margin-top: 170px;
-	margin-bottom: 80px;
+/* SECTION - ABOUT */
+.about-section .title-2 {
+	margin-bottom: 35px;
 }
 
-.about-content {
+.about-section .about-content {
 	display: flex;
 	align-items: center;
 }
 
-.about-content h2 {
+.about-section .about-content h2 {
 	font-size: 20px;
 	color: var(--turquoise);
 }
 
-.about-content p {
+.about-section .about-content p {
 	font-size: 16px;
+}
+
+/* ----------------------------------------------- */
+
+/* SECTION - PORTFOLIO */
+.portfolio-section {
+	padding-bottom: 100px;
+}
+
+.portfolio-section .container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.portfolio-section .title-2 {
+	margin-bottom: 50px;
+}
+
+.portfolio-section .portfolio-project {
+	margin-bottom: 100px;
 }
 
 /* ----------------------------------------------- */
@@ -223,6 +242,12 @@ p {
 	font-size: 16px;
 	color: var(--txt-grey);
 }
+
+.section-subpages {
+	background-color: var(--white);
+	margin-top: 170px;
+	margin-bottom: 80px;
+}
 /* ----------------------------------------------- */
 
 /* BUTTONS AND LINKS */
@@ -282,6 +307,10 @@ p {
 		font-size: 65px;
 		font-family: "Audiowide", sans-serif;
 	}
+
+	.portfolio-section .portfolio-project:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -318,10 +347,9 @@ p {
 		right: 0;
 	}
 
-	.contact-section{
+	.contact-section {
 		bottom: 72px;
 	}
-
 
 	.footer-section {
 		bottom: 0;
