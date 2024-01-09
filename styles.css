@@ -276,6 +276,14 @@ p {
 	text-decoration: underline;
 }
 
+/* MEDIA QUERIES  */
+@media only screen and (max-width: 992px) {
+	.title-2 {
+		font-size: 65px;
+		font-family: "Audiowide", sans-serif;
+	}
+}
+
 @media only screen and (max-width: 576px) {
 	.title-1 {
 		font-size: 28px;
@@ -302,21 +310,7 @@ p {
 	}
 }
 
-/* @media only screen and (max-width: 768px) {
-	.contact-section,
-	.footer-section {
-		position: static;
-		bottom: unset;
-		right: unset;
-		left: unset;
-	}
-} */
-
-@media only screen and (min-width: 992px) {
-	.about-section {
-		/* height: 100vh; */
-	}
-
+@media only screen and (min-width: 993px) {
 	.contact-section,
 	.footer-section {
 		position: fixed;
