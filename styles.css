@@ -30,14 +30,111 @@ h2 {
   font-size: 48px;
 }
 
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
+.title-2 {
+	font-size: 96px;
+	font-family: "Audiowide", sans-serif;
+	text-shadow: 3px 5px 7px var(--txt-shadow);
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.5;
+.title-3 {
+	font-size: 24px;
+	opacity: 0.7;
+	color: var(--pink);
+}
+
+@media only screen and (max-width: 576px) {
+	.title-1 {
+		font-size: 28px;
+		opacity: 0.9;
+	}
+
+	.title-2 {
+		font-size: 38px;
+		font-family: "Audiowide", sans-serif;
+	}
+
+	.title-3 {
+		font-size: 16px;
+		opacity: 0.7;
+	}
+}
+/* ---------------------------------------- */
+
+/* SECTION - RECENT WORK */
+.recent-work-section {
+	margin: 100px auto;
+	background-color: var(--white);
+}
+
+.recent-work-section .section-title {
+	font-size: 48px;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+	.recent-work-section .section-title {
+		font-size: 38px;
+		text-align: left;
+	}
+}
+
+.portfolio-project .project-title {
+	text-shadow: 2px 3px 5px var(--txt-shadow);
+}
+
+.portfolio-project .project-description {
+	text-shadow: 2px 3px 5px var(--txt-shadow);
+	font-size: 16px;
+	color: var(--txt-grey);
+}
+/* ----------------------------------------------- */
+
+/* SECTION - CONTACT */
+.contact-section {
+	padding: 30px 0;
+	background-color: var(--turquoise);
+	font-size: 16px !important;
+}
+
+.contact-section p {
+	font-size: 16px;
+}
+
+.contact-section .section-title {
+	font-size: 38px;
+	margin-bottom: 20px;
+	text-shadow: 2px 3px 5px var(--txt-grey);
+}
+
+@media only screen and (max-width: 576px) {
+	.contact-section .section-title {
+		font-size: 30px;
+	}
+}
+/* ----------------------------------------------- */
+
+/* FOOTER SECTION  */
+.footer-section {
+	background-color: var(--darkgray);
+	color: var(--white);
+	padding: 20px 0;
+	font-size: 13px;
+}
+
+.footer-section a {
+	color: var(--pink);
+}
+
+.social-media-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-media-icons img {
+	opacity: 0.7;
+	margin: 0 15px;
 }
 
 .navigation-links {
