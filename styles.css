@@ -93,9 +93,12 @@ p {
 	margin: 20px 0;
 }
 
-.avatar {
+.avatar-bg {
 	background: var(--turquoise);
 	border-radius: 50%;
+}
+
+.avatar-width {
 	max-width: 65%;
 	height: auto;
 }
@@ -117,22 +120,6 @@ p {
 	color: var(--pink);
 }
 
-@media only screen and (max-width: 576px) {
-	.title-1 {
-		font-size: 28px;
-		opacity: 0.9;
-	}
-
-	.title-2 {
-		font-size: 38px;
-		font-family: "Audiowide", sans-serif;
-	}
-
-	.title-3 {
-		font-size: 16px;
-		opacity: 0.7;
-	}
-}
 /* ---------------------------------------- */
 
 /* SECTION - RECENT WORK */
@@ -147,22 +134,33 @@ p {
 	text-align: center;
 }
 
-@media only screen and (max-width: 576px) {
-	.recent-work-section .section-title {
-		font-size: 38px;
-		text-align: left;
-	}
-}
-
 .portfolio-project .project-title {
 	text-shadow: 2px 3px 5px var(--txt-shadow);
 }
 
-.portfolio-project .project-description {
-	text-shadow: 2px 3px 5px var(--txt-shadow);
-	font-size: 16px;
-	color: var(--txt-grey);
+/* ----------------------------------------------- */
+
+/* SECTION - CONTACT */
+.about-section {
+	background-color: var(--white);
+	margin-top: 170px;
+	margin-bottom: 80px;
 }
+
+.about-content {
+	display: flex;
+	align-items: center;
+}
+
+.about-content h2 {
+	font-size: 20px;
+	color: var(--turquoise);
+}
+
+.about-content p {
+	font-size: 16px;
+}
+
 /* ----------------------------------------------- */
 
 /* SECTION - CONTACT */
@@ -170,14 +168,7 @@ p {
 	padding: 30px 0;
 	background-color: var(--turquoise);
 	font-size: 16px !important;
-	position: sticky;
-	bottom: 72px;
-	left: 0;
-	right: 0;
-}
-
-.footer-section a {
-	color: var(--pink);
+	position: static;
 }
 
 .contact-section p {
@@ -190,11 +181,6 @@ p {
 	text-shadow: 2px 3px 5px var(--txt-grey);
 }
 
-@media only screen and (max-width: 576px) {
-	.contact-section .section-title {
-		font-size: 30px;
-	}
-}
 /* ----------------------------------------------- */
 
 /* FOOTER SECTION  */
@@ -203,10 +189,11 @@ p {
 	color: var(--white);
 	padding: 20px 0;
 	font-size: 13px;
-	position: sticky;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	position: static;
+}
+
+.footer-section a {
+	color: var(--pink);
 }
 
 .social-media-icons {
@@ -229,6 +216,12 @@ p {
 .section-title {
 	font-family: "Audiowide", sans-serif;
 	text-shadow: 2px 3px 5px var(--txt-shadow);
+}
+
+.txt-description {
+	text-shadow: 2px 3px 5px var(--txt-shadow);
+	font-size: 16px;
+	color: var(--txt-grey);
 }
 /* ----------------------------------------------- */
 
@@ -271,14 +264,6 @@ p {
 }
 /* ----------------------------------------------- */
 
-.about-paragraphs {
-	margin: 30px 0;
-}
-
-.about-paragraphs p {
-	margin: 10px;
-}
-
 .email-link {
 	display: flex;
 	justify-content: center;
@@ -289,4 +274,62 @@ p {
 
 .email-link:hover {
 	text-decoration: underline;
+}
+
+@media only screen and (max-width: 576px) {
+	.title-1 {
+		font-size: 28px;
+		opacity: 0.9;
+	}
+
+	.title-2 {
+		font-size: 38px;
+		font-family: "Audiowide", sans-serif;
+	}
+
+	.title-3 {
+		font-size: 16px;
+		opacity: 0.7;
+	}
+
+	.contact-section .section-title {
+		font-size: 30px;
+	}
+
+	.recent-work-section .section-title {
+		font-size: 38px;
+		text-align: left;
+	}
+}
+
+/* @media only screen and (max-width: 768px) {
+	.contact-section,
+	.footer-section {
+		position: static;
+		bottom: unset;
+		right: unset;
+		left: unset;
+	}
+} */
+
+@media only screen and (min-width: 992px) {
+	.about-section {
+		/* height: 100vh; */
+	}
+
+	.contact-section,
+	.footer-section {
+		position: fixed;
+		left: 0;
+		right: 0;
+	}
+
+	.contact-section{
+		bottom: 72px;
+	}
+
+
+	.footer-section {
+		bottom: 0;
+	}
 }
